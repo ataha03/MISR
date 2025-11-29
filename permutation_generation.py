@@ -390,8 +390,8 @@ if __name__ == "__main__":
            16: [1, 15, 17], 17: [2, 6, 16]}
     """
 
-    rects = load_rectangles_from_file("configs/20_40.config")
-    adj = load_adjacency_dict("adjlists/20_40.adjlist")
+    rects = load_rectangles_from_file("20_40.config")
+    adj = load_adjacency_dict("20_40.adjlist")
 
     print("Breaking ties...")
     new_rects = solve_rect_permutation(rects, adj)
@@ -421,3 +421,4 @@ if __name__ == "__main__":
     #plot both
     plot_rects(new_rects, reconstructed_rects)
     
+
